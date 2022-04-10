@@ -484,7 +484,7 @@ Please [post an issue](https://github.com/whyolet/jonf/issues) if you see some
 
 - Reviews and fixes of this draft specification
 - Formal grammar importing [JSON grammar](http://crockford.com/mckeeman.html) but excluding newlines from its `ws` rule
-- Add JONF to [github/linguist](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
+- Add JONF to [github/linguist](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) and [Rouge](https://github.com/rouge-ruby/rouge) highlighters
 - Reference parser/formatter in Python with pluggable JSON parser/formatter
 - Bump to version 1.0.0
 - Get contributed JONF parsers/formatters for other languages
@@ -493,7 +493,7 @@ Please [post an issue](https://github.com/whyolet/jonf/issues) if you see some
 
 ```jonf
 Name - JONF
-Version - 0.0.4
+Version - 0.0.5
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app

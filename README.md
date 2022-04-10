@@ -2,6 +2,9 @@
 
 Json for cONF
 
+* JSON for configuration files
+{:toc}
+
 ## Quick example
 
 ```jonf
@@ -490,10 +493,10 @@ Please [post an issue](https://github.com/whyolet/jonf/issues) if you see some
 
 ```jonf
 Name - JONF
-Version - 0.0.2
+Version - 0.0.3
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
-Website - jonf.app  # TODO
+Website - jonf.app
 Email - support@jonf.app  # TODO
 Maintainer - whyolet.com
 License - MIT

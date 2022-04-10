@@ -7,8 +7,6 @@ Json for cONF
 
 ## Quick example
 
-<table><tr><th>JONF</th><th>JSON</th></tr><tr><td>
-
 ```jonf
 # Fictional supercomputer IaC
 
@@ -41,7 +39,7 @@ friends =
     age = 42
 ```
 
-</td><td>
+Equal JSON:
 
 ```json
 {
@@ -72,8 +70,6 @@ friends =
   ]
 }
 ```
-
-</td></tr></table>
 
 ## Goals
 

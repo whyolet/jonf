@@ -114,14 +114,6 @@ Bash memo:
 - `-` is like single quote `'`
 - `=` is like double quote `"`
 
-Chemical memo:
-
-<span style="background: gray">- **U**</span>nquoted strings are **U**nivalent like a Hydrogen:  
-<img style="background: white; width: 234px" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Ammoniak.png" />
-
-<span style="background: gray">= **O**</span>ther values form double bond like an **O**xygen:  
-<img style="background: white; width: 234px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Xenon-tetroxide-2D.png/234px-Xenon-tetroxide-2D.png" />
-
 ## Rules
 
 - `-` leads to unquoted string on the same line
@@ -498,7 +490,7 @@ Please [post an issue](https://github.com/whyolet/jonf/issues) if you see some
 
 ```jonf
 Name - JONF
-Version - 0.0.1
+Version - 0.0.2
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app  # TODO

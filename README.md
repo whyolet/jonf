@@ -2,7 +2,7 @@
 
 Json for cONF
 
-* JSON for configuration files
+* Docs: [jonf.app](https://jonf.app/)
 {:toc}
 
 ## Quick example
@@ -493,11 +493,11 @@ Please [post an issue](https://github.com/whyolet/jonf/issues) if you see some
 
 ```jonf
 Name - JONF
-Version - 0.0.3
+Version - 0.0.4
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app
-Email - support@jonf.app  # TODO
+Email - support@jonf.app
 Maintainer - whyolet.com
 License - MIT
 Open format? - Yes

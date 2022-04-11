@@ -96,7 +96,6 @@ Equal JSON:
   - [TOML](https://toml.io/en/)
   - [XML](https://www.w3.org/XML/)
   - [YAML](https://yaml.org/)
-
 - Most alternatives above, especially the most popular [YAML](https://yaml.org/), are much more complex than JSON and/or have other flaws - please see [the great analysis by StrictYAML](https://hitchdev.com/strictyaml/why-not/)
 - [The Norway Problem](https://hitchdev.com/strictyaml/why/implicit-typing-removed/) is a trap even so popular YAML [falls](https://docs.gitlab.com/ee/ci/yaml/script.html#use-special-characters-with-script) into
 - [StrictYAML](https://hitchdev.com/strictyaml/) and [NestedText](https://nestedtext.org/) solve this problem by assuming all scalars to be strings, and then using optional external schema to convert these strings to the intended type
@@ -109,8 +108,8 @@ Equal JSON:
 
 Key-value separators and array markers:
 
-`-` Unquoted strings  
-`=` Other values
+- `-` is for unquoted strings
+- `=` is for all other values
 
 Bash memo:
 
@@ -121,17 +120,12 @@ Bash memo:
 
 - `-` leads to unquoted string on the same line
     - or to indented unquoted multiline string on the next lines
-
 - `=` leads to double-quoted JSON string or another JSON value on the same line
     - or to indented JONF object on the next lines
     - or to indented JONF array on the next lines
-
 - It is possible to introduce values of custom types after `=`, e.g. numerous ISO 8601 dates and times formats, but this is a way either to growth of complexity of standard and each parser, or to interoperability hell with user-provided callbacks to parse custom types, so this feature should not be implemented
-
-- DSL, e.g. [serverless variables](https://www.serverless.com/framework/docs/providers/aws/guide/variables), should be parsed after JONF is parsed, see example 11
-
+- DSL, e.g. [serverless variables](https://www.serverless.com/framework/docs/providers/aws/guide/variables), should be parsed after JONF is parsed, see [example 11](#11-dsl)
 - You can have any indentation style that you want so long as it is <s>black</s> "two spaces", because standardized indentation improves readability and helps to avoid bugs
-
 - For the same reason, exactly one space char ` ` is required:
     - after array marker
     - before key-value separator
@@ -493,7 +487,7 @@ Please [post an issue](https://github.com/whyolet/jonf/issues) if you see some
 
 ```jonf
 Name - JONF
-Version - 0.0.5
+Version - 0.0.6
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app

@@ -37,6 +37,13 @@ friends =
   =
     name - Bob
     age = 42
+
+scripts =
+  check -
+    set -eu  # No more && chains
+    DIRS="src tests"
+    lint $DIRS
+    test $DIRS
 ```
 
 Equal JSON:
@@ -67,7 +74,10 @@ Equal JSON:
       "name": "Bob",
       "age": 42
     }
-  ]
+  ],
+  "scripts": {
+    "check": "set -eu  # No more && chains\nDIRS=\"src tests\"\nlint $DIRS\ntest $DIRS"
+  }
 }
 ```
 
@@ -476,9 +486,9 @@ Please [post an issue](https://github.com/whyolet/jonf/issues) if you see some
 
 ## Roadmap
 
+- Add JONF to [github/linguist](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) and [Rouge](https://github.com/rouge-ruby/rouge) highlighters to simplify the reviews
 - Reviews and fixes of this draft specification
 - Formal grammar importing [JSON grammar](http://crockford.com/mckeeman.html) but excluding newlines from its `ws` rule
-- Add JONF to [github/linguist](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) and [Rouge](https://github.com/rouge-ruby/rouge) highlighters
 - Reference parser/formatter in Python with pluggable JSON parser/formatter
 - Bump to version 1.0.0
 - Get contributed JONF parsers/formatters for other languages
@@ -487,7 +497,7 @@ Please [post an issue](https://github.com/whyolet/jonf/issues) if you see some
 
 ```jonf
 Name - JONF
-Version - 0.0.6
+Version - 0.0.7
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app

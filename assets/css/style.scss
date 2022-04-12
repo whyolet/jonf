@@ -2,7 +2,9 @@
 ---
 
 // Based on https://github.com/pages-themes/cayman/blob/master/assets/css/style.scss
-// overriding https://github.com/pages-themes/cayman/blob/master/_sass/variables.scss
+@import '{{ site.theme }}';
+
+// Overriding https://github.com/pages-themes/cayman/blob/master/_sass/variables.scss
 // with whyolet colors
 
 // Breakpoints
@@ -28,6 +30,3 @@ $code-text-color: #745682 !default;
 $border-color: #e6dcf0 !default;
 $table-border-color: #ebe9ec !default;
 $hr-border-color: #f0eff1 !default;
-
-// Base theme
-@import 'jekyll-theme-cayman';

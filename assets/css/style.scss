@@ -1,4 +1,9 @@
-// Based on https://github.com/pages-themes/cayman/blob/master/_sass/variables.scss
+---
+---
+
+// Based on https://github.com/pages-themes/cayman/blob/master/assets/css/style.scss
+// overriding https://github.com/pages-themes/cayman/blob/master/_sass/variables.scss
+// with whyolet colors
 
 // Breakpoints
 $large-breakpoint: 64em !default;
@@ -23,3 +28,6 @@ $code-text-color: #745682 !default;
 $border-color: #e6dcf0 !default;
 $table-border-color: #ebe9ec !default;
 $hr-border-color: #f0eff1 !default;
+
+// Base theme
+@import 'jekyll-theme-cayman';

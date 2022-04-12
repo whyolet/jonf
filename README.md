@@ -1,4 +1,4 @@
-![jonf icon](jonf-1280x640.png)
+![JONF icon](jonf-1280x640.png)
 
 # JONF
 

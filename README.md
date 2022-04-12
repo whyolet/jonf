@@ -13,7 +13,7 @@
 <meta name="msapplication-TileColor" content="#663399">
 <meta name="theme-color" content="#663399">
 
-![jonf icon](/icon/jonf-1280x640.png)
+![jonf icon](jonf-1280x640.png)
 
 # JONF
 

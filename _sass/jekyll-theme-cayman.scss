@@ -1,5 +1,4 @@
 // Copy of https://github.com/pages-themes/cayman/blob/master/_sass/jekyll-theme-cayman.scss
-// with `a:hover` replaced with `a` being always `font-weight: bold;`
 
 @import "normalize";
 @import "rouge-github";
@@ -58,7 +57,10 @@ body {
 a {
   color: $body-link-color;
   text-decoration: none;
-  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .btn {

@@ -513,4 +513,4 @@ Thank you for reading
 
 Please [post an issue or idea](https://github.com/whyolet/jonf/issues) or contribute otherwise:
 
-![GitHub icon](GitHub-Mark-32px.png) [https://github.com/whyolet/jonf](https://github.com/whyolet/jonf)
+<img src="GitHub-Mark-32px.png" alt="GitHub icon" align="center" /> [https://github.com/whyolet/jonf](https://github.com/whyolet/jonf)

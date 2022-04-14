@@ -493,7 +493,7 @@ Note that DSL decided to change type of `verbose` to the type of the variable it
 
 ```jonf
 Name - JONF
-Version - 0.0.9
+Version - 0.0.10
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app
@@ -505,7 +505,7 @@ Type of format - Data interchange
 Extended from - JSON
 ```
 
-### [That's all!](#thats-all)
+## [That's all!](#thats-all)
 
 Simple and valuable, right?
 
@@ -513,4 +513,4 @@ Thank you for reading
 
 Please [post an issue or idea](https://github.com/whyolet/jonf/issues) or contribute otherwise:
 
-https://github.com/whyolet/jonf
+![GitHub icon](GitHub-Mark-32px.png) [https://github.com/whyolet/jonf](https://github.com/whyolet/jonf)

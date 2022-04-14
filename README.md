@@ -1,13 +1,13 @@
 ![JONF icon](jonf-1280x640.png)
 
-# JONF
+# [JONF](#)
 
 Json for cONF
 
 * Docs: [jonf.app](https://jonf.app/)
 {:toc}
 
-## Quick example
+## [Quick example](#quick-example)
 
 ```jonf
 # Fictional supercomputer IaC
@@ -83,13 +83,13 @@ Equal JSON:
 }
 ```
 
-## Goals
+## [Goals](#goals)
 
 - Make JONF more readable and suitable for configuration files and DSLs than [JSON](https://www.json.org/)
 - Keep JONF simple and flawless, unlike [YAML](https://yaml.org/)
 - Do not sacrifice JSON features to achieve previous goals, unlike [StrictYAML](https://hitchdev.com/strictyaml/) and [NestedText](https://nestedtext.org/)
 
-## Motivation
+## [Motivation](#motivation)
 
 - [JSON](https://www.json.org/) is great for API, but not as great for config files and DSLs, that's why alternatives are trying to fill the gap:
   - [ELDF](https://eldf.org/)
@@ -116,7 +116,7 @@ Equal JSON:
 - While JSON does not have standard representation of dates, times, and so on, to keep it unbloated, existing JSON scalar types are heavily used, so we'd better try to keep them
 - JONF solves [The Norway Problem](https://hitchdev.com/strictyaml/why/implicit-typing-removed/) and keeps JSON scalar types in an elegant and terse way
 
-## Cheatsheet
+## [Cheatsheet](#cheatsheet)
 
 Key-value separators and array markers:
 
@@ -128,7 +128,7 @@ Bash memo:
 - `-` is like single quote `'`
 - `=` is like double quote `"`
 
-## Rules
+## [Rules](#rules)
 
 - `-` leads to unquoted string on the same line
     - or to indented unquoted multiline string on the next lines
@@ -143,9 +143,9 @@ Bash memo:
     - before key-value separator
     - after key-value separator if the value is on the same line
 
-## JONF in 11 examples
+## [JONF in 11 examples](#jonf-in-11-examples)
 
-### 1. Root value
+### [1. Root value](#1-root-value)
 
 One-line non-indented JSON value is a valid JONF root value, because in a one-line case, JSON is great:
 
@@ -182,7 +182,7 @@ Equal JSON:
 
 More features of unquoted string are explained in the next examples
 
-### 2. JONF array
+### [2. JONF array](#2-jonf-array)
 
 ```jonf
 - Alice in Wonderland
@@ -239,7 +239,7 @@ Equal JSON:
 ]
 ```
 
-### 3. JONF object
+### [3. JONF object](#3-jonf-object)
 
 ```jonf
 name - Deep Thought
@@ -263,7 +263,7 @@ Equal JSON:
 }
 ```
 
-### 4. Object in object
+### [4. Object in object](#4-object-in-object)
 
 ```jonf
 type - dragon
@@ -284,7 +284,7 @@ Equal JSON:
 }
 ```
 
-### 5. Object in array
+### [5. Object in array](#5-object-in-array)
 
 ```jonf
 =
@@ -310,7 +310,7 @@ Equal JSON:
 ]
 ```
 
-### 6. `=` before nested object
+### [6. `=` before nested object](#6--before-nested-object)
 
 If we used `-` instead of `=` in the  example 5, then we'd have strings instead of objects:
 
@@ -332,7 +332,7 @@ Equal JSON:
 }
 ```
 
-### 7. Depth and boundaries
+### [7. Depth and boundaries](#7-depth-and-boundaries)
 
 JONF is arguably more readable than YAML below, let alone YAML's typing flaw:
 
@@ -364,7 +364,7 @@ friends =
     nick - tuvw
 ```
 
-### 8. Array in object
+### [8. Array in object](#8-array-in-object)
 
 ```jonf
 name - Bob
@@ -387,7 +387,7 @@ Equal JSON:
 }
 ```
 
-### 9. Array in array
+### [9. Array in array](#9-array-in-array)
 
 ```jonf
 =
@@ -423,7 +423,7 @@ Again, JSON is the best for one-liners, that's why they are valid in JONF:
 [["We", "are"], ["almost", ["done!"]]]
 ```
 
-### 10. Comment
+### [10. Comment](#10-comment)
 
 Text from `#` to the end of line is a comment if `#` is the first character in the line or there is a whitespace before it and it is not inside of JSON value:
 
@@ -446,7 +446,7 @@ Equal JSON:
 
 JONF uses `#` and never `//` or `/* */` for the same reason JSON uses double-quotes and never single-quotes: to keep it simple
 
-### 11. DSL
+### [11. DSL](#11-dsl)
 
 In `serverless.jonf` [variables](https://www.serverless.com/framework/docs/providers/aws/guide/variables) are parsed after JONF is parsed:
 
@@ -480,13 +480,7 @@ Equal JSON, parsed by DSL:
 
 Note that DSL decided to change type of `verbose` to the type of the variable it referenced. JONF never does that, it is just a container format, strictly mapped to JSON only
 
-## That's all!
-
-Simple and valuable, right?
-
-Please [post an issue](https://github.com/whyolet/jonf/issues) if you see some
-
-## Roadmap
+## [Roadmap](#roadmap)
 
 - Add JONF to [github/linguist](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) and [Rouge](https://github.com/rouge-ruby/rouge) highlighters to simplify the reviews
 - Reviews and fixes of this draft specification
@@ -495,11 +489,11 @@ Please [post an issue](https://github.com/whyolet/jonf/issues) if you see some
 - Bump to version 1.0.0
 - Get contributed JONF parsers/formatters for other languages
 
-## JONF as JONF
+## [JONF as JONF](#jonf-as-jonf)
 
 ```jonf
 Name - JONF
-Version - 0.0.8
+Version - 0.0.9
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app
@@ -507,9 +501,16 @@ Email - support@jonf.app
 Maintainer - whyolet.com
 License - MIT
 Open format? - Yes
-Standard - ISO  # TODO
-Type code - TEXT
-Uniform Type Identifier (UTI) - public.jonf  # TODO
 Type of format - Data interchange
 Extended from - JSON
 ```
+
+### [That's all!](#thats-all)
+
+Simple and valuable, right?
+
+Thank you for reading
+
+Please [post an issue or idea](https://github.com/whyolet/jonf/issues) or contribute otherwise:
+
+https://github.com/whyolet/jonf

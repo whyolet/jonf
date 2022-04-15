@@ -78,7 +78,7 @@ Equal JSON:
     }
   ],
   "scripts": {
-    "check": "set -eu  # No more && chains\nDIRS=\"src tests\"\nlint $DIRS\ntest $DIRS"
+    "check": "set -eu\nDIRS=\"src tests\"\nlint $DIRS\ntest $DIRS"
   }
 }
 ```
@@ -435,7 +435,7 @@ Equal JSON:
 ```json
 {
   "name": "Alice",
-  "url": "https://example.org/#alice"
+  "url": "https://example.org/#alice",
   "location": "Wonderland # 42",
 }
 ```
@@ -481,7 +481,7 @@ Note that DSL decided to change type of `verbose` to the type of the variable it
 - Add JONF to [github/linguist](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) and [Rouge](https://github.com/rouge-ruby/rouge) highlighters to simplify the reviews
 - Reviews and fixes of this draft specification
 - Formal grammar importing [JSON grammar](http://crockford.com/mckeeman.html) but excluding newlines from its `ws` rule
-- Reference [JONF parser/formatter in Python](https://pypi.org/project/jonf/) with pluggable JSON parser/formatter
+- Apply this grammar to the reference [JONF parser/formatter in Python](https://pypi.org/project/jonf/)
 - Bump to version 1.0.0
 - Get contributed JONF parsers/formatters for other languages
 
@@ -489,7 +489,7 @@ Note that DSL decided to change type of `verbose` to the type of the variable it
 
 ```jonf
 Name - JONF
-Version - 0.0.11
+Version - 0.0.12
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app

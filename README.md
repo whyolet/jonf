@@ -136,14 +136,14 @@ Bash memo:
     - or to indented JONF object on the next lines
     - or to indented JONF array on the next lines
 - It is possible to introduce values of custom types after `=`, e.g. numerous ISO 8601 dates and times formats, but this is a way either to growth of complexity of standard and each parser, or to interoperability hell with user-provided callbacks to parse custom types, so this feature should not be implemented
-- DSL, e.g. [serverless variables](https://www.serverless.com/framework/docs/providers/aws/guide/variables), should be parsed after JONF is parsed, see [example 11](#11-dsl)
+- DSL, e.g. [serverless variables](https://www.serverless.com/framework/docs/providers/aws/guide/variables), should be parsed after JONF is parsed, see [example 10. DSL](#10-dsl)
 - You can have any indentation style that you want so long as it is <s>black</s> "two spaces", because standardized indentation improves readability and helps to avoid bugs
 - For the same reason, exactly one space char ` ` is required:
     - after array marker
     - before key-value separator
     - after key-value separator if the value is on the same line
 
-## [JONF in 11 examples](#jonf-in-11-examples)
+## [JONF in 10 examples](#jonf-in-10-examples)
 
 ### [1. Root value](#1-root-value)
 
@@ -310,29 +310,25 @@ Equal JSON:
 ]
 ```
 
-### [6. `=` before nested object](#6--before-nested-object)
-
-If we used `-` instead of `=` in the  example 5, then we'd have strings instead of objects:
+Please note `=` should be used as an array marker, unless you want unquoted strings:
 
 ```jonf
+- unquoted string
 -
-  name - Alice
-  age = null
--
-  name - Bob
-  age = 42
+  multiline - unquoted
+  string = here
 ```
 
 Equal JSON:
 
 ```json
-{
-  "name - Alice\nage = null",
-  "name - Bob\nage = 42"
-}
+[
+  "unquoted string",
+  "multiline - unquoted\nstring = here"
+]
 ```
 
-### [7. Depth and boundaries](#7-depth-and-boundaries)
+### [6. Depth and boundaries](#6-depth-and-boundaries)
 
 JONF is arguably more readable than YAML below, let alone YAML's typing flaw:
 
@@ -364,7 +360,7 @@ friends =
     nick - tuvw
 ```
 
-### [8. Array in object](#8-array-in-object)
+### [7. Array in object](#7-array-in-object)
 
 ```jonf
 name - Bob
@@ -387,7 +383,7 @@ Equal JSON:
 }
 ```
 
-### [9. Array in array](#9-array-in-array)
+### [8. Array in array](#8-array-in-array)
 
 ```jonf
 =
@@ -423,7 +419,7 @@ Again, JSON is the best for one-liners, that's why they are valid in JONF:
 [["We", "are"], ["almost", ["done!"]]]
 ```
 
-### [10. Comment](#10-comment)
+### [9. Comment](#9-comment)
 
 Text from `#` to the end of line is a comment if `#` is the first character in the line or there is a whitespace before it and it is not inside of JSON value:
 
@@ -446,7 +442,7 @@ Equal JSON:
 
 JONF uses `#` and never `//` or `/* */` for the same reason JSON uses double-quotes and never single-quotes: to keep it simple
 
-### [11. DSL](#11-dsl)
+### [10. DSL](#10-dsl)
 
 In `serverless.jonf` [variables](https://www.serverless.com/framework/docs/providers/aws/guide/variables) are parsed after JONF is parsed:
 
@@ -493,7 +489,7 @@ Note that DSL decided to change type of `verbose` to the type of the variable it
 
 ```jonf
 Name - JONF
-Version - 0.0.10
+Version - 0.0.11
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app

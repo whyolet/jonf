@@ -481,7 +481,7 @@ Note that DSL decided to change type of `verbose` to the type of the variable it
 - Add JONF to [github/linguist](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) and [Rouge](https://github.com/rouge-ruby/rouge) highlighters to simplify the reviews
 - Reviews and fixes of this draft specification
 - Formal grammar importing [JSON grammar](http://crockford.com/mckeeman.html) but excluding newlines from its `ws` rule
-- Reference parser/formatter in Python with pluggable JSON parser/formatter
+- Reference [JONF parser/formatter in Python](https://pypi.org/project/jonf/) with pluggable JSON parser/formatter
 - Bump to version 1.0.0
 - Get contributed JONF parsers/formatters for other languages
 

@@ -210,6 +210,8 @@ More features of unquoted string are explained in the next examples
 = []
 - {}
 = {}
+- ""
+= ""
 ```
 
 Equal JSON:
@@ -235,7 +237,9 @@ Equal JSON:
   "[]",
   [],
   "{}",
-  {}
+  {},
+  "\"\"",
+  ""
 ]
 ```
 
@@ -489,7 +493,7 @@ Note that DSL decided to change type of `verbose` to the type of the variable it
 
 ```jonf
 Name - JONF
-Version - 0.0.12
+Version - 0.0.13
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app

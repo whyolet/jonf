@@ -92,22 +92,28 @@ Equal JSON:
 ## [Motivation](#motivation)
 
 - [JSON](https://www.json.org/) is great for API, but not as great for config files and DSLs, that's why alternatives are trying to fill the gap:
-  - [ELDF](https://eldf.org/)
-  - [ENO](https://eno-lang.org/)
-  - [HCL](https://github.com/hashicorp/hcl)
-  - [HJSON](https://hjson.github.io/)
-  - [HOCON](https://github.com/lightbend/config/blob/master/HOCON.md)
-  - [HRON](https://github.com/mrange/hron)
-  - [ION](https://amzn.github.io/ion-docs/)
-  - [JONF](https://jonf.app/)
-  - [JSON5](https://json5.org/)
-  - [Jsonnet](https://jsonnet.org/)
-  - [NestedText](https://nestedtext.org/)
-  - [SDLang](https://sdlang.org/)
-  - [StrictYAML](https://hitchdev.com/strictyaml/)
-  - [TOML](https://toml.io/en/)
-  - [XML](https://www.w3.org/XML/)
-  - [YAML](https://yaml.org/)
+  - `01.` [ELDF](https://eldf.org/)
+  - `02.` [ENO](https://eno-lang.org/)
+  - `03.` [HCL](https://github.com/hashicorp/hcl)
+  - `04.` [HJSON](https://hjson.github.io/)
+  - `05.` [HOCON](https://github.com/lightbend/config/blob/master/HOCON.md)
+  - `06.` [HRON](https://github.com/mrange/hron)
+  - `07.` [ION](https://amzn.github.io/ion-docs/)
+  - `08.` [JSON5](https://json5.org/)
+  - `09.` [Jsonnet](https://jsonnet.org/)
+  - `10.` [NestedText](https://nestedtext.org/)
+  - `11.` [SDLang](https://sdlang.org/)
+  - `12.` [StrictYAML](https://hitchdev.com/strictyaml/)
+  - `13.` [TOML](https://toml.io/en/)
+  - `14.` [YAML](https://yaml.org/)
+
+![xkcd: Standards](https://imgs.xkcd.com/comics/standards.png)
+
+- So, here we are!
+  - `15.` [JONF](https://jonf.app/)
+
+- Disclaimer: I excluded [XML](https://www.w3.org/XML/) from the competition to match XKCD image, also XML hardly competes for even goal 1 anyway
+- Competition is not a bad thing at all - this is how everything evolves, and it shows there is a market for the product
 - Most alternatives above, especially the most popular [YAML](https://yaml.org/), are much more complex than JSON and/or have other flaws - please see [the great analysis by StrictYAML](https://hitchdev.com/strictyaml/why-not/)
 - [The Norway Problem](https://hitchdev.com/strictyaml/why/implicit-typing-removed/) is a trap even so popular YAML [falls](https://docs.gitlab.com/ee/ci/yaml/script.html#use-special-characters-with-script) into
 - [StrictYAML](https://hitchdev.com/strictyaml/) and [NestedText](https://nestedtext.org/) solve this problem by assuming all scalars to be strings, and then using optional external schema to convert these strings to the intended type
@@ -493,7 +499,7 @@ Note that DSL decided to change type of `verbose` to the type of the variable it
 
 ```jonf
 Name - JONF
-Version - 0.0.13
+Version - 0.0.14
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app

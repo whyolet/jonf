@@ -91,26 +91,24 @@ Equal JSON:
 
 ## [Motivation](#motivation)
 
-- [JSON](https://www.json.org/) is great for API, but not as great for config files and DSLs, that's why alternatives are trying to fill the gap:
-  - `01.` [ELDF](https://eldf.org/)
-  - `02.` [ENO](https://eno-lang.org/)
-  - `03.` [HCL](https://github.com/hashicorp/hcl)
-  - `04.` [HJSON](https://hjson.github.io/)
-  - `05.` [HOCON](https://github.com/lightbend/config/blob/master/HOCON.md)
-  - `06.` [HRON](https://github.com/mrange/hron)
-  - `07.` [ION](https://amzn.github.io/ion-docs/)
-  - `08.` [JSON5](https://json5.org/)
-  - `09.` [Jsonnet](https://jsonnet.org/)
-  - `10.` [NestedText](https://nestedtext.org/)
-  - `11.` [SDLang](https://sdlang.org/)
-  - `12.` [StrictYAML](https://hitchdev.com/strictyaml/)
-  - `13.` [TOML](https://toml.io/en/)
-  - `14.` [YAML](https://yaml.org/)
+[JSON](https://www.json.org/) is great for API, but not as great for config files and DSLs, that's why alternatives are trying to fill the gap:
 
-![xkcd: Standards](https://imgs.xkcd.com/comics/standards.png)
-
-- So, here we are!
-  - `15.` [JONF](https://jonf.app/)
+1. [ELDF](https://eldf.org/)
+1. [ENO](https://eno-lang.org/)
+1. [HCL](https://github.com/hashicorp/hcl)
+1. [HJSON](https://hjson.github.io/)
+1. [HOCON](https://github.com/lightbend/config/blob/master/HOCON.md)
+1. [HRON](https://github.com/mrange/hron)
+1. [ION](https://amzn.github.io/ion-docs/)
+1. [JSON5](https://json5.org/)
+1. [Jsonnet](https://jsonnet.org/)
+1. [NestedText](https://nestedtext.org/)
+1. [SDLang](https://sdlang.org/)
+1. [StrictYAML](https://hitchdev.com/strictyaml/)
+1. [TOML](https://toml.io/en/)
+1. [YAML](https://yaml.org/)  
+   ![xkcd: Standards](https://imgs.xkcd.com/comics/standards.png)
+1. [JONF](https://jonf.app/)
 
 - Disclaimer: I excluded [XML](https://www.w3.org/XML/) from the competition to match XKCD image, also XML hardly competes for even goal 1 anyway
 - Competition is not a bad thing at all - this is how everything evolves, and it shows there is a market for the product
@@ -499,7 +497,7 @@ Note that DSL decided to change type of `verbose` to the type of the variable it
 
 ```jonf
 Name - JONF
-Version - 0.0.14
+Version - 0.0.15
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app

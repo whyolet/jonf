@@ -112,7 +112,7 @@ Equal JSON:
 
 - Disclaimer: I excluded [XML](https://www.w3.org/XML/) from the competition to match [this XKCD image](https://xkcd.com/927/), also XML hardly competes for goal 1 anyway
 - Competition is not a bad thing at all - this is how everything evolves, and it shows there is a market for the product
-- Most alternatives above, especially the most popular [YAML](https://yaml.org/), are much more complex than JSON and/or have other flaws - please see [the great analysis by StrictYAML](https://hitchdev.com/strictyaml/why-not/)
+- Most alternatives above, especially the most popular [YAML](https://yaml.org/), are much more [complex](https://yaml.org/spec/1.2.2/) than JSON and/or have other [flaws](https://noyaml.com/) - please see [the great analysis by StrictYAML](https://hitchdev.com/strictyaml/why-not/)
 - [The Norway Problem](https://hitchdev.com/strictyaml/why/implicit-typing-removed/) is a trap even so popular YAML [falls](https://docs.gitlab.com/ee/ci/yaml/script.html#use-special-characters-with-script) into
 - [StrictYAML](https://hitchdev.com/strictyaml/) and [NestedText](https://nestedtext.org/) solve this problem by assuming all scalars to be strings, and then using optional external schema to convert these strings to the intended type
 - This means standard representation of numbers, `true`, `false`, and `null` is no longer supported without external schema
@@ -497,7 +497,7 @@ Note that DSL decided to change type of `verbose` to the type of the variable it
 
 ```jonf
 Name - JONF
-Version - 0.0.16
+Version - 0.0.17
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app

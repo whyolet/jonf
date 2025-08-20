@@ -120,6 +120,11 @@ Equal JSON:
 - While JSON does not have standard representation of dates, times, and so on, to keep it unbloated, existing JSON scalar types are heavily used, so we'd better try to keep them
 - JONF solves [The Norway Problem](https://hitchdev.com/strictyaml/why/implicit-typing-removed/) and keeps JSON scalar types in an elegant and terse way
 
+Later update:
+* Actually assuming all scalars to be text strings may be a good idea,
+* but the options above are still not simple enough,
+* hence 16. [txtt](https://github.com/whyolet/txtt)!
+
 ## [Cheatsheet](#cheatsheet)
 
 Key-value separators and array markers:
@@ -497,7 +502,7 @@ Note that DSL decided to change type of `verbose` to the type of the variable it
 
 ```jonf
 Name - JONF
-Version - 0.0.17
+Version - 0.0.18
 Filename extension - .jonf
 Internet media type - application/jonf  # TODO
 Website - jonf.app

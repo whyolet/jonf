@@ -2,10 +2,10 @@
 
 # [JONF](#)
 
-Json for cONF
+> [!WARNING]
+> JONF draft is **archived** in favor of [TTT](https://github.com/whyolet/ttt) - please check it.
 
-* Docs: [jonf.app](https://jonf.app/)
-{:toc}
+Json for cONF
 
 ## [Quick example](#quick-example)
 
@@ -489,37 +489,7 @@ Equal JSON, parsed by DSL:
 
 Note that DSL decided to change type of `verbose` to the type of the variable it referenced. JONF never does that, it is just a container format, strictly mapped to JSON only
 
-## [Roadmap](#roadmap)
+## Archived
 
-- Add JONF to [github/linguist](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) and [Rouge](https://github.com/rouge-ruby/rouge) highlighters to simplify the reviews
-- Reviews and fixes of this draft specification
-- Formal grammar importing [JSON grammar](http://crockford.com/mckeeman.html) but excluding newlines from its `ws` rule
-- Apply this grammar to the reference [JONF parser/formatter in Python](https://pypi.org/project/jonf/)
-- Bump to version 1.0.0
-- Get contributed JONF parsers/formatters for other languages
-
-## [JONF as JONF](#jonf-as-jonf)
-
-```jonf
-Name - JONF
-Version - 0.0.18
-Filename extension - .jonf
-Internet media type - application/jonf  # TODO
-Website - jonf.app
-Email - support@jonf.app
-Maintainer - whyolet.com
-License - MIT
-Open format? - Yes
-Type of format - Data interchange
-Extended from - JSON
-```
-
-## [That's all!](#thats-all)
-
-Simple and valuable, right?
-
-Thank you for reading
-
-Please [post an issue or idea](https://github.com/whyolet/jonf/issues) or contribute otherwise:
-
-<img src="GitHub-Mark-32px.png" alt="GitHub icon" align="center" /> [https://github.com/whyolet/jonf](https://github.com/whyolet/jonf)
+> [!WARNING]
+> JONF draft is **archived** in favor of [TTT](https://github.com/whyolet/ttt) - please check it.
